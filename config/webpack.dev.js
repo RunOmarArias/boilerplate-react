@@ -20,10 +20,12 @@ const devConfig = {
     ],
     devtool: "eval-source-map",
     module: {
-        rules: {
-            use: ["style-loader", "css-loader"],
-            test: /\.(css)$/
-        }
+        rules: [
+            {
+                use: ["style-loader", "css-loader"],
+                test: /\.(css)$/
+            }
+        ]
     }
 }
 
